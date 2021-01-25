@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.corona">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_main"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_main_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".MainActivity"
+            android:label="코로나 정보알리미">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SelectRegion"
+            android:label="확진자현황 지역 선택"/>
+        <activity android:name=".TestNotice"
+            android:label="코로나 자가진단 가이드"/>
+        <activity android:name=".SelfTest"
+            android:label="코로나 자가진단 테스트"/>
+        <activity android:name=".TestResultDanger"
+            android:label="자가진단 결과 - 위험"/>
+        <activity android:name=".TestResultNormal"
+            android:label="자가진단 결과 - 정상"/>
+        <activity android:name=".TestResultSuspicion"
+            android:label="자가진단 결과 - 의심"/>
+        <activity android:name=".Info"
+            android:label="진료소 정보 검색"/>
+        <activity android:name=".SupportTest"
+            android:label="정부지원금 설문지"/>
+        <activity android:name=".SupportResult"
+            android:label="정부지원금 결과"/>
+    </application>
+
+</manifest>

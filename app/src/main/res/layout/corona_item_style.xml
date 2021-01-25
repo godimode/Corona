@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" 
+    android:layout_width="match_parent"
+    android:gravity="top"
+    android:layout_height="105dp">
+    
+    <LinearLayout
+        android:background="#FFF"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="4"
+        android:orientation="vertical">
+        
+        <ImageView
+            android:id="@+id/list_item_icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_launcher_foreground"
+            android:padding="5dp"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:background="#FFF"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="11"
+        android:orientation="vertical">
+        
+        <TextView
+            android:id="@+id/list_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Title"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/list_item_comments"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Comments"
+            android:gravity="center|left"
+            android:textSize="16sp"/>
+        
+    </LinearLayout>
+
+    <TextView
+        android:background="#FFF"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:text=">"
+        android:textSize="30sp"
+        android:gravity="center"/>
+
+</LinearLayout>

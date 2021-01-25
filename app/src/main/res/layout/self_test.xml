@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SelfTest">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="COVID-19 진단"
+                    android:textColor="#000000"
+                    android:textSize="28sp" />
+
+                <Button
+                    android:id="@+id/button_link"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="20dp"
+                    android:text="상세 증상 확인" />
+
+            </LinearLayout>
+
+            <TextView
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:layout_marginTop="4dp"
+                android:text="이 테스트는 코로나바이러스감염증-19 예방을 위하여 진단자의 건강 상태를 확인하는 내용입니다. 질문에 따라 해당되는 사항에 체크해 주시기 바랍니다."/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="18sp"
+                    android:text="본인의 몸에 열이 있습니까?"/>
+
+                <RadioGroup
+                    android:id="@+id/radioGroupFever"
+                    android:layout_marginTop="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/radioButtonLow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="37.5ºC 미만"
+                        android:textSize="16sp"/>
+
+                    <RadioButton
+                        android:id="@+id/radioButtonMid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="37.5ºC ~ 38ºC 미만"
+                        android:textSize="16sp"/>
+
+                    <RadioButton
+                        android:id="@+id/radioButtonHigh"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="38ºC 이상"
+                        android:textSize="16sp"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="4dp"
+                    android:text="본인에게 코로나19가 의심되는 증상이 있습니까?"
+                    android:textSize="18sp"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:text="보기 중 여러 개 선택 가능"/>
+
+                <LinearLayout
+                    android:layout_marginTop="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <CheckBox
+                        android:id="@+id/checkBox1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="기침"
+                        android:textSize="18sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="두통"
+                        android:textSize="18sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="설사"
+                        android:textSize="18sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="몸살"
+                        android:textSize="18sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="인후통"
+                        android:textSize="18sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="숨가쁨 또는 호흡곤란"
+                        android:textSize="18sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="가슴통증 또는 압박감"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="10dp"
+                    android:text="최근 코로나19 확진자가 다녀간 장소나 지역을 다녀온 사실이 있습니까?"
+                    android:lineSpacingExtra="2dp"
+                    android:textSize="18sp"
+                    android:textColor="#000"/>
+
+                <RadioGroup
+                    android:id="@+id/radioGroupTravel"
+                    android:layout_marginTop="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButtonNo"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="아니오"
+                        android:textSize="16sp"/>
+
+                    <RadioButton
+                        android:id="@+id/radioButtonYes"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="예"
+                        android:textSize="16sp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/self_test_result"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="진단 확인" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
